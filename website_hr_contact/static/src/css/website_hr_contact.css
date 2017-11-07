@@ -1,0 +1,26 @@
+#middle_column {
+    width: 100%;
+}
+.employees_contact dl {
+}
+
+.employees_contact dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    font-weight: bold;
+}
+.employees_contact dt:after {
+    content: ":\00a0";
+}
+.employees_contact dd {
+    padding: 0 0 0.5em 0;
+}
+section.employee_contact {
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+.employee_contact img {
+    width: 64px;
+}
