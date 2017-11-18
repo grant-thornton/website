@@ -87,7 +87,13 @@ class WebsiteHrAddressbook(http.Controller):
         if department:
             domain.append(('department_id', '=', department.id))
         if search:
-            domain.append(('name', 'ilike', search))
+            domain += [
+                '|', '|', '|',
+                ('name', 'ilike', search),
+                ('department_id.name', 'ilike', search),
+                ('job_id.name', 'ilike', search),
+                ('city', 'ilike', search)
+            ]
         return domain
 
     @http.route(['/page/hr_contact/employees',

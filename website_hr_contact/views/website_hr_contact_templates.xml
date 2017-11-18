@@ -30,7 +30,7 @@
                 </div>
               </div>
             </section>
-            <div class="" id="middle_column">
+            <div class="" id="middle_column" style="width:80%;">
               <t t-foreach="employees" t-as="employee">
                 <t t-call="website_hr_contact.employee"/>
               </t>
@@ -166,8 +166,8 @@
         <attribute name="class">col-md-9</attribute>
       </xpath>
       <xpath expr="//div[@id='middle_column']" position="after">
-        <div class="clearfix"/>
-        <div class="col-md-3 css_noprint hidden-xs" id="right_column">
+        <!-- <div class="clearfix"/> -->
+        <div class="col-md-3 css_noprint hidden-xs" id="right_column" style="width:20%;">
           <ul class="nav nav-pills nav-stacked mt16">
             <li t-att-class=" '' if department else 'active' ">
               <a t-att-href="url_builder(department=0)">All Departments</a>
