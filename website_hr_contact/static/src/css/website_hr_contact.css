@@ -17,10 +17,14 @@
     padding: 0 0 0.5em 0;
 }
 section.employee_contact {
-    width: 25%;
-    height: 400px;
+    width: 33%;
+    height: 500px;
     float: left;
+    padding-right: 2em;
 }
 .employee_contact img {
-    width: 64px;
+    width: 100px;
+}
+#right_column {
+    width: 20%;
 }

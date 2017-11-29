@@ -13,7 +13,7 @@
         <div class="container employees_contact">
           <div class="row mt8 header">
             <div class="col-sm-7" id="employees_menu">
-                <t t-call="website_hr_contact.search"><t t-set="search_class">pagination form-inline col-md-3</t></t>
+                <t t-call="website_hr_contact.search"><t t-set="search_class">pagination form-inline col-md-6</t></t>
                  <t t-call="website.pager"/>
             </div>
           </div>
@@ -75,7 +75,7 @@
               </t>
               <div class="public_info text-info oe_subdescription" t-field="employee.public_info"/>
               <t t-call="website_hr_contact.employee_address">
-                <t t-set="no_edit" t-value="false"/>
+                <t t-set="no_edit" t-value="true"/>
                 <t t-set="address" t-value="employee.address_id"/>
               </t>
               <t t-call="website_hr_contact.employee_contact"/>
@@ -167,7 +167,7 @@
       </xpath>
       <xpath expr="//div[@id='middle_column']" position="after">
         <!-- <div class="clearfix"/> -->
-        <div class="col-md-3 css_noprint hidden-xs" id="right_column" style="width:20%;">
+        <div class="col-md-3 css_noprint hidden-xs" id="right_column">
           <ul class="nav nav-pills nav-stacked mt16">
             <li t-att-class=" '' if department else 'active' ">
               <a t-att-href="url_builder(department=0)">All Departments</a>

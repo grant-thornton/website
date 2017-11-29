@@ -17,6 +17,7 @@
     ],
 
     'data': [
+        'security/ir.model.access.csv',
         'views/website_hr_contact_templates.xml',
         'data/website_hr_contact_data.xml',
     ],
